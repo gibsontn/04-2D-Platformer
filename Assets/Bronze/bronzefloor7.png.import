@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/bronzefloor1.png-1d324947c8ba06edf554c6db20101aea.stex"
+path="res://.import/bronzefloor7.png-daebc324aadd1fd3472771ad21ce030e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Bronzefloor/bronzefloor1.png"
-dest_files=[ "res://.import/bronzefloor1.png-1d324947c8ba06edf554c6db20101aea.stex" ]
+source_file="res://Assets/Bronze/bronzefloor7.png"
+dest_files=[ "res://.import/bronzefloor7.png-daebc324aadd1fd3472771ad21ce030e.stex" ]
 
 [params]
 
