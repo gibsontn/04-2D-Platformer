@@ -1,5 +1,5 @@
 # 2D-Platformer-Character
-A wizard has lost his magic and must traverse the desert and avoid goblins in order to get his powerful sorcery back.
+A wizard has lost his magic and must traverse the desert and avoid goblins and scorpions in order to get his powerful sorcery back.
 
 ## Implementation
 Built using Godot 3.2.3
