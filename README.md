@@ -5,7 +5,8 @@ A somewhat-generic character (including animations and state machine) appropriat
 ## Implementation
 Built using Godot 3.2.3
 
-The player sprite is adaptated from [MV Platformer Male](https://opengameart.org/content/mv-platformer-male-32x64) by MoikMellah. CC0 Licensed.
+Player sprite purchased from [Graphicriver.net](https://graphicriver.net/item/game-assets-pixel-platformer-kit-sprites-background-and-weapons/19258197)
+
 
 ## References
 None
@@ -17,4 +18,4 @@ None
 None
 
 ## Created by 
-Jason Francis
+Taylor Gibson
