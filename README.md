@@ -1,6 +1,5 @@
 # 2D-Platformer-Character
-
-A somewhat-generic character (including animations and state machine) appropriate for a 2D platformer built in Godot. Includes test level.
+A wizard has lost his magic and must traverse the desert and avoid goblins in order to get his powerful sorcery back.
 
 ## Implementation
 Built using Godot 3.2.3
