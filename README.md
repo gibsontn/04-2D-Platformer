@@ -4,7 +4,9 @@ A wizard has lost his magic and must traverse the desert and avoid goblins and s
 ## Implementation
 Built using Godot 3.2.3
 
-Player sprite purchased from [Graphicriver.net](https://graphicriver.net/item/game-assets-pixel-platformer-kit-sprites-background-and-weapons/19258197)
+Player sprite and game background purchased from [Graphicriver.net](https://graphicriver.net/item/game-assets-pixel-platformer-kit-sprites-background-and-weapons/19258197)
+Main Menu background purchased from [itch.io](https://pzuh.itch.io/free-desert-platformer-tileset)
+
 
 
 ## References
