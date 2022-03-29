@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/1-1.png.png-5bb6cf26ff2a67570f25df95eecab1a1.stex"
+path="res://.import/sandtile2.png-4a3320f39060eaeeed2f5091fb981743.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/SandTiles/1-1.png.png"
-dest_files=[ "res://.import/1-1.png.png-5bb6cf26ff2a67570f25df95eecab1a1.stex" ]
+source_file="res://Assets/SandTiles/sandtile2.png"
+dest_files=[ "res://.import/sandtile2.png-4a3320f39060eaeeed2f5091fb981743.stex" ]
 
 [params]
 
