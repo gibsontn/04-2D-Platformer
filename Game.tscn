@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=2]
+[gd_scene load_steps=46 format=2]
 
 [ext_resource path="res://icon.png" type="Texture" id=1]
 [ext_resource path="res://Camera.gd" type="Script" id=2]
@@ -17,6 +17,14 @@
 [ext_resource path="res://Assets/SandTiles/sandtile16.png" type="Texture" id=15]
 [ext_resource path="res://Assets/SandTiles/sandtile15.png" type="Texture" id=16]
 [ext_resource path="res://Assets/Decor/Tree.png" type="Texture" id=17]
+[ext_resource path="res://Assets/Decor/SignArrow.png" type="Texture" id=18]
+[ext_resource path="res://Assets/Decor/Stone.png" type="Texture" id=19]
+[ext_resource path="res://Assets/Decor/Bush (1).png" type="Texture" id=20]
+[ext_resource path="res://Assets/Decor/Crate.png" type="Texture" id=21]
+[ext_resource path="res://Assets/Decor/Grass (1).png" type="Texture" id=22]
+[ext_resource path="res://Assets/Decor/Bush (2).png" type="Texture" id=23]
+[ext_resource path="res://Assets/Decor/Grass (2).png" type="Texture" id=24]
+[ext_resource path="res://Assets/Decor/Cactus (1).png" type="Texture" id=25]
 
 [sub_resource type="NavigationPolygon" id=19]
 
@@ -63,6 +71,118 @@ shader_param/amount = 200
 0/shape_one_way_margin = 0.0
 0/shapes = [  ]
 0/z_index = 0
+4/name = "Stone.png 4"
+4/texture = ExtResource( 19 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 0, -1, 127, 74 )
+4/tile_mode = 0
+4/occluder_offset = Vector2( 0, 0 )
+4/navigation_offset = Vector2( 0, 0 )
+4/shape_offset = Vector2( 0, 0 )
+4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+4/shape_one_way = false
+4/shape_one_way_margin = 0.0
+4/shapes = [  ]
+4/z_index = 0
+5/name = "SignArrow.png 5"
+5/texture = ExtResource( 18 )
+5/tex_offset = Vector2( 0, 0 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 0, 0, 96, 96 )
+5/tile_mode = 0
+5/occluder_offset = Vector2( 0, 0 )
+5/navigation_offset = Vector2( 0, 0 )
+5/shape_offset = Vector2( 0, 0 )
+5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+5/shape_one_way = false
+5/shape_one_way_margin = 0.0
+5/shapes = [  ]
+5/z_index = 0
+6/name = "Cactus (1).png 6"
+6/texture = ExtResource( 25 )
+6/tex_offset = Vector2( 0, 0 )
+6/modulate = Color( 1, 1, 1, 1 )
+6/region = Rect2( 0, 0, 128, 128 )
+6/tile_mode = 0
+6/occluder_offset = Vector2( 0, 0 )
+6/navigation_offset = Vector2( 0, 0 )
+6/shape_offset = Vector2( 0, 0 )
+6/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+6/shape_one_way = false
+6/shape_one_way_margin = 0.0
+6/shapes = [  ]
+6/z_index = 0
+7/name = "Crate-1.png.png 7"
+7/texture = ExtResource( 21 )
+7/tex_offset = Vector2( 0, 0 )
+7/modulate = Color( 1, 1, 1, 1 )
+7/region = Rect2( 0, 0, 64, 64 )
+7/tile_mode = 0
+7/occluder_offset = Vector2( 0, 0 )
+7/navigation_offset = Vector2( 0, 0 )
+7/shape_offset = Vector2( 0, 0 )
+7/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+7/shape_one_way = false
+7/shape_one_way_margin = 0.0
+7/shapes = [  ]
+7/z_index = 0
+8/name = "Grass (1).png 8"
+8/texture = ExtResource( 22 )
+8/tex_offset = Vector2( 0, 0 )
+8/modulate = Color( 1, 1, 1, 1 )
+8/region = Rect2( 0, 0, 96, 64 )
+8/tile_mode = 0
+8/occluder_offset = Vector2( 0, 0 )
+8/navigation_offset = Vector2( 0, 0 )
+8/shape_offset = Vector2( 0, 0 )
+8/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+8/shape_one_way = false
+8/shape_one_way_margin = 0.0
+8/shapes = [  ]
+8/z_index = 0
+9/name = "Grass (2).png 9"
+9/texture = ExtResource( 24 )
+9/tex_offset = Vector2( 0, 0 )
+9/modulate = Color( 1, 1, 1, 1 )
+9/region = Rect2( 0, 0, 128, 64 )
+9/tile_mode = 0
+9/occluder_offset = Vector2( 0, 0 )
+9/navigation_offset = Vector2( 0, 0 )
+9/shape_offset = Vector2( 0, 0 )
+9/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+9/shape_one_way = false
+9/shape_one_way_margin = 0.0
+9/shapes = [  ]
+9/z_index = 0
+10/name = "Bush (2).png 10"
+10/texture = ExtResource( 23 )
+10/tex_offset = Vector2( 0, 0 )
+10/modulate = Color( 1, 1, 1, 1 )
+10/region = Rect2( 0, 0, 128, 96 )
+10/tile_mode = 0
+10/occluder_offset = Vector2( 0, 0 )
+10/navigation_offset = Vector2( 0, 0 )
+10/shape_offset = Vector2( 0, 0 )
+10/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+10/shape_one_way = false
+10/shape_one_way_margin = 0.0
+10/shapes = [  ]
+10/z_index = 0
+11/name = "Bush (1).png 11"
+11/texture = ExtResource( 20 )
+11/tex_offset = Vector2( 0, 0 )
+11/modulate = Color( 1, 1, 1, 1 )
+11/region = Rect2( 0, 0, 160, 96 )
+11/tile_mode = 0
+11/occluder_offset = Vector2( 0, 0 )
+11/navigation_offset = Vector2( 0, 0 )
+11/shape_offset = Vector2( 0, 0 )
+11/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+11/shape_one_way = false
+11/shape_one_way_margin = 0.0
+11/shapes = [  ]
+11/z_index = 0
 
 [sub_resource type="NavigationPolygon" id=1]
 vertices = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
@@ -411,7 +531,7 @@ centered = false
 [node name="Foreground" type="TileMap" parent="."]
 tile_set = SubResource( 20 )
 format = 1
-tile_data = PoolIntArray( -65424, 0, 0, 65559, 0, 0, 65584, 0, 0, 196609, 0, 0 )
+tile_data = PoolIntArray( -65424, 0, 0, 65559, 0, 0, 65584, 0, 0, 65640, 6, 0, 131174, 4, 0, 131175, 9, 0, 131179, 10, 0, 131185, 9, 0, 196609, 0, 0, 196639, 6, 0, 196650, 7, 0, 196701, 11, 0, 196705, 9, 0, 262157, 6, 0, 262167, 9, 0, 262172, 7, 0, 262173, 7, 0, 262177, 11, 0, 262178, 4, 0, 262185, 7, 0, 262186, 7, 0, 262187, 7, 0, 262189, 10, 0, 262190, 4, 0, 262192, 9, 0, 262220, 6, 0, 262226, 7, 0, 262229, 8, 0, 327695, 7, 0, 327696, 11, 0, 327697, 4, 0, 327738, 6, 0, 327744, 7, 0, 327752, 10, 0, 327755, 9, 0, 393216, 4, 0, 393221, 9, 0, 393222, 12, 0, 393223, 5, 0, 393275, 4, 0, 393278, 11, 0, 393279, 7, 0, 393280, 7, 0, 393283, 8, 0 )
 
 [node name="Player_Container" type="Node2D" parent="."]
 script = ExtResource( 12 )
