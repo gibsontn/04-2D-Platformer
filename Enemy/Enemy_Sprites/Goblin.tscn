@@ -72,13 +72,13 @@ scale = Vector2( 0.75, 0.75 )
 script = ExtResource( 9 )
 constraint_left = Vector2( 3680, 413 )
 constraint_right = Vector2( 4352, 413 )
-speed = 20
 
 [node name="Tween" type="Tween" parent="."]
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 9 )
 animation = "Walk"
+frame = 6
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

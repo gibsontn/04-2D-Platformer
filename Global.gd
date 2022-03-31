@@ -12,3 +12,7 @@ func increase_score(s):
 	var hud = get_node_or_null("/root/Game/UI/HUD")
 	if hud != null:
 		hud.update_score()
+		
+
+func reset():
+	score = 0
