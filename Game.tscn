@@ -1,4 +1,4 @@
-[gd_scene load_steps=49 format=2]
+[gd_scene load_steps=50 format=2]
 
 [ext_resource path="res://icon.png" type="Texture" id=1]
 [ext_resource path="res://Camera.gd" type="Script" id=2]
@@ -28,6 +28,7 @@
 [ext_resource path="res://Enemy_Container.gd" type="Script" id=26]
 [ext_resource path="res://Assets/music.ogg" type="AudioStream" id=27]
 [ext_resource path="res://UI/Music.gd" type="Script" id=28]
+[ext_resource path="res://Coins/Coin.tscn" type="PackedScene" id=29]
 
 [sub_resource type="Shader" id=5]
 code = "/*
@@ -573,5 +574,43 @@ stream = ExtResource( 27 )
 volume_db = -3.095
 autoplay = true
 script = ExtResource( 28 )
+
+[node name="Coins" type="Node2D" parent="."]
+
+[node name="Coin" parent="Coins" instance=ExtResource( 29 )]
+position = Vector2( 576, 392 )
+
+[node name="Coin2" parent="Coins" instance=ExtResource( 29 )]
+position = Vector2( 1024, 256 )
+
+[node name="Coin3" parent="Coins" instance=ExtResource( 29 )]
+position = Vector2( 1560, 248 )
+
+[node name="Coin4" parent="Coins" instance=ExtResource( 29 )]
+position = Vector2( 2240, 256 )
+
+[node name="Coin5" parent="Coins" instance=ExtResource( 29 )]
+position = Vector2( 3000, 208 )
+
+[node name="Coin6" parent="Coins" instance=ExtResource( 29 )]
+position = Vector2( 4792, 320 )
+
+[node name="Coin7" parent="Coins" instance=ExtResource( 29 )]
+position = Vector2( 5376, 264 )
+
+[node name="Coin8" parent="Coins" instance=ExtResource( 29 )]
+position = Vector2( 5528, 264 )
+
+[node name="Coin9" parent="Coins" instance=ExtResource( 29 )]
+position = Vector2( 5952, 200 )
+
+[node name="Coin10" parent="Coins" instance=ExtResource( 29 )]
+position = Vector2( 6080, 200 )
+
+[node name="Coin11" parent="Coins" instance=ExtResource( 29 )]
+position = Vector2( 6208, 200 )
+
+[node name="Coin12" parent="Coins" instance=ExtResource( 29 )]
+position = Vector2( 3752, 384 )
 
 [connection signal="finished" from="Music" to="Music" method="_on_Music_finished"]
