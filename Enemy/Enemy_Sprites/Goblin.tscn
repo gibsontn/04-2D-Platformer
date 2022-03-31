@@ -67,13 +67,17 @@ radius = 36.0
 height = 46.0
 
 [node name="Goblin" type="KinematicBody2D"]
+position = Vector2( 3800, 500 )
 script = ExtResource( 9 )
+constraint_left = Vector2( 3680, 448 )
+constraint_right = Vector2( 4352, 448 )
 
 [node name="Tween" type="Tween" parent="."]
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 9 )
 animation = "Walk"
+frame = 6
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
