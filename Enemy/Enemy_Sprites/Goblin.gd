@@ -2,7 +2,7 @@ extends KinematicBody2D
 
 export var constraint_left = Vector2(0,0)
 export var constraint_right = Vector2(100,0)
-export var speed = 10
+export var speed = 6
 
 func _ready():
 	pass
