@@ -723,7 +723,7 @@ position = Vector2( 16, 80 )
 scale = Vector2( 3, 3 )
 frames = SubResource( 39 )
 animation = "Whoosh"
-frame = 1
+frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Portal"]
