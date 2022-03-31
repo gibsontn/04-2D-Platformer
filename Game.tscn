@@ -56,9 +56,9 @@ shader = SubResource( 5 )
 shader_param/amount = 200
 
 [sub_resource type="NavigationPolygon" id=19]
-vertices = PoolVector2Array( 2360, -696, 2376, 312, 1416, 312, 1408, -696, 4400, -704, 4416, 440, 3648, 440, 3624, -712, 7472, -704, 7480, 192, 6472, 184, 6472, -696, 3424, -704, 3440, 320, 2568, 320, 2576, -704 )
+vertices = PoolVector2Array( 2368, -696, 2368, 320, 1416, 320, 1408, -696, 4400, -704, 4416, 448, 3648, 448, 3624, -712, 7472, -704, 7480, 192, 6472, 192, 6472, -696, 3424, -704, 3440, 320, 2568, 320, 2576, -704 )
 polygons = [ PoolIntArray( 0, 1, 2, 3 ), PoolIntArray( 4, 5, 6, 7 ), PoolIntArray( 8, 9, 10, 11 ), PoolIntArray( 12, 13, 14, 15 ) ]
-outlines = [ PoolVector2Array( 1408, -696, 1416, 312, 2376, 312, 2360, -696 ), PoolVector2Array( 3624, -712, 3648, 440, 4416, 440, 4400, -704 ), PoolVector2Array( 6472, -696, 6472, 184, 7480, 192, 7472, -704 ), PoolVector2Array( 2576, -704, 2568, 320, 3440, 320, 3424, -704 ) ]
+outlines = [ PoolVector2Array( 1408, -696, 1416, 320, 2368, 320, 2368, -696 ), PoolVector2Array( 3624, -712, 3648, 448, 4416, 448, 4400, -704 ), PoolVector2Array( 6472, -696, 6472, 192, 7480, 192, 7472, -704 ), PoolVector2Array( 2576, -704, 2568, 320, 3440, 320, 3424, -704 ) ]
 
 [sub_resource type="TileSet" id=20]
 0/name = "Tree.png 0"
