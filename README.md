@@ -19,7 +19,8 @@ None
 None
 
 ## Extra Credit
-None
+Game Background Music
+Animated sprite for the coins
 
 ## Created by 
 Taylor Gibson
