@@ -4,7 +4,6 @@ func _ready():
 	pass
 
 
-
-
 func _on_Portal_body_entered(body):
-	get_tree().change_scene("res://UI/End_Game.tscn")
+	if body.name == "Player":
+		var _scene = get_tree().change_scene("res://UI/End_Game.tscn")
