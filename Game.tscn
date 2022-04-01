@@ -520,26 +520,6 @@ points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
 } ]
 12/z_index = 0
 
-[sub_resource type="DynamicFont" id=21]
-size = 20
-font_data = ExtResource( 31 )
-
-[sub_resource type="DynamicFont" id=22]
-size = 50
-font_data = ExtResource( 31 )
-
-[sub_resource type="DynamicFont" id=23]
-size = 20
-font_data = ExtResource( 31 )
-
-[sub_resource type="DynamicFont" id=24]
-size = 20
-font_data = ExtResource( 31 )
-
-[sub_resource type="DynamicFont" id=25]
-size = 20
-font_data = ExtResource( 31 )
-
 [sub_resource type="AtlasTexture" id=41]
 flags = 4
 atlas = ExtResource( 32 )
@@ -636,6 +616,26 @@ animations = [ {
 [sub_resource type="RectangleShape2D" id=40]
 extents = Vector2( 32, 40 )
 
+[sub_resource type="DynamicFont" id=21]
+size = 20
+font_data = ExtResource( 31 )
+
+[sub_resource type="DynamicFont" id=22]
+size = 50
+font_data = ExtResource( 31 )
+
+[sub_resource type="DynamicFont" id=23]
+size = 20
+font_data = ExtResource( 31 )
+
+[sub_resource type="DynamicFont" id=24]
+size = 20
+font_data = ExtResource( 31 )
+
+[sub_resource type="DynamicFont" id=25]
+size = 20
+font_data = ExtResource( 31 )
+
 [node name="Game" type="Node2D"]
 
 [node name="Background" type="Sprite" parent="."]
@@ -697,6 +697,60 @@ volume_db = -3.095
 autoplay = true
 script = ExtResource( 28 )
 
+[node name="Coin_Container" type="Node2D" parent="."]
+script = ExtResource( 35 )
+
+[node name="Coin" parent="Coin_Container" instance=ExtResource( 29 )]
+position = Vector2( 576, 392 )
+
+[node name="Coin2" parent="Coin_Container" instance=ExtResource( 29 )]
+position = Vector2( 1024, 256 )
+
+[node name="Coin3" parent="Coin_Container" instance=ExtResource( 29 )]
+position = Vector2( 1592, 264 )
+
+[node name="Coin4" parent="Coin_Container" instance=ExtResource( 29 )]
+position = Vector2( 2240, 256 )
+
+[node name="Coin5" parent="Coin_Container" instance=ExtResource( 29 )]
+position = Vector2( 3000, 208 )
+
+[node name="Coin6" parent="Coin_Container" instance=ExtResource( 29 )]
+position = Vector2( 4792, 320 )
+
+[node name="Coin7" parent="Coin_Container" instance=ExtResource( 29 )]
+position = Vector2( 5376, 264 )
+
+[node name="Coin8" parent="Coin_Container" instance=ExtResource( 29 )]
+position = Vector2( 5528, 264 )
+
+[node name="Coin9" parent="Coin_Container" instance=ExtResource( 29 )]
+position = Vector2( 5952, 200 )
+
+[node name="Coin10" parent="Coin_Container" instance=ExtResource( 29 )]
+position = Vector2( 6080, 200 )
+
+[node name="Coin11" parent="Coin_Container" instance=ExtResource( 29 )]
+position = Vector2( 6208, 200 )
+
+[node name="Coin12" parent="Coin_Container" instance=ExtResource( 29 )]
+position = Vector2( 3752, 384 )
+
+[node name="Portal" type="Area2D" parent="."]
+position = Vector2( 7072, 64 )
+script = ExtResource( 33 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Portal"]
+position = Vector2( 16, 80 )
+scale = Vector2( 3, 3 )
+frames = SubResource( 39 )
+animation = "Whoosh"
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portal"]
+position = Vector2( 16, 88 )
+shape = SubResource( 40 )
+
 [node name="UI" type="CanvasLayer" parent="."]
 
 [node name="HUD" type="Control" parent="UI"]
@@ -727,7 +781,6 @@ __meta__ = {
 }
 
 [node name="Menu" type="Control" parent="UI"]
-pause_mode = 2
 visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -798,63 +851,8 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Coin_Container" type="Node2D" parent="."]
-script = ExtResource( 35 )
-
-[node name="Coin" parent="Coin_Container" instance=ExtResource( 29 )]
-position = Vector2( 576, 392 )
-
-[node name="Coin2" parent="Coin_Container" instance=ExtResource( 29 )]
-position = Vector2( 1024, 256 )
-
-[node name="Coin3" parent="Coin_Container" instance=ExtResource( 29 )]
-position = Vector2( 1592, 264 )
-
-[node name="Coin4" parent="Coin_Container" instance=ExtResource( 29 )]
-position = Vector2( 2240, 256 )
-
-[node name="Coin5" parent="Coin_Container" instance=ExtResource( 29 )]
-position = Vector2( 3000, 208 )
-
-[node name="Coin6" parent="Coin_Container" instance=ExtResource( 29 )]
-position = Vector2( 4792, 320 )
-
-[node name="Coin7" parent="Coin_Container" instance=ExtResource( 29 )]
-position = Vector2( 5376, 264 )
-
-[node name="Coin8" parent="Coin_Container" instance=ExtResource( 29 )]
-position = Vector2( 5528, 264 )
-
-[node name="Coin9" parent="Coin_Container" instance=ExtResource( 29 )]
-position = Vector2( 5952, 200 )
-
-[node name="Coin10" parent="Coin_Container" instance=ExtResource( 29 )]
-position = Vector2( 6080, 200 )
-
-[node name="Coin11" parent="Coin_Container" instance=ExtResource( 29 )]
-position = Vector2( 6208, 200 )
-
-[node name="Coin12" parent="Coin_Container" instance=ExtResource( 29 )]
-position = Vector2( 3752, 384 )
-
-[node name="Portal" type="Area2D" parent="."]
-position = Vector2( 7072, 64 )
-script = ExtResource( 33 )
-
-[node name="AnimatedSprite" type="AnimatedSprite" parent="Portal"]
-position = Vector2( 16, 80 )
-scale = Vector2( 3, 3 )
-frames = SubResource( 39 )
-animation = "Whoosh"
-frame = 7
-playing = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Portal"]
-position = Vector2( 16, 88 )
-shape = SubResource( 40 )
-
 [connection signal="finished" from="Music" to="Music" method="_on_Music_finished"]
+[connection signal="body_entered" from="Portal" to="Portal" method="_on_Portal_body_entered"]
 [connection signal="pressed" from="UI/Menu/Save" to="UI/Menu" method="_on_Save_pressed"]
 [connection signal="pressed" from="UI/Menu/Load" to="UI/Menu" method="_on_Load_pressed"]
 [connection signal="pressed" from="UI/Menu/Quit" to="UI/Menu" method="_on_Quit_pressed"]
-[connection signal="body_entered" from="Portal" to="Portal" method="_on_Portal_body_entered"]

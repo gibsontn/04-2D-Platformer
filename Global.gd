@@ -1,7 +1,6 @@
 extends Node
 
 var score = 0
-var timer = 0
 
 var saves = [
 	"user://game-data_0.json"
