@@ -1,11 +1,16 @@
 extends Node2D
 
-onready var Player = load("res://Player/Player.tscn")
 var starting_position = Vector2(200,200)
+onready var Player = load("res://Player/Player.tscn")
 
 
 func _physics_process(_delta):
-	if not has_node("Player"):
-		var player = Player.instance()
-		player.position = starting_position
-		add_child(player)
+	var player = get_node_or_null("Player")
+	if player == null:
+		spawn(starting_position)
+
+func spawn(p):
+	var player = Player.instance()
+	player.position = p
+	player.name = "Player"
+	add_child(player)
