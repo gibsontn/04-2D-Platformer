@@ -43,15 +43,24 @@ func get_save_data():
 		data["player"] = var2str(player.position)
 	var coins = get_node("/root/Game/Coin_Container").get_children()
 	for c in coins:
-		var temp = {"position":c.position, "score":c.score}
+		var temp = {"position":var2str(c.position), "score":c.score}
 		data["coins"].append(temp)
 	return data
 
 func load_save_data(data):
 	score = data["score"]
 	if data["player"] != "":
+		var player = get_node_or_null("/root/Game/Player_Container/Player")
+		if player != null:
+			player.name = "Player2"
+			player.queue_free()
 		get_node("/root/Game/Player_Container").spawn(str2var(data["player"]))
-	pass
+	var coin_container = get_node("/root/Game/Coin_Container")
+	for c in coin_container.get_children():
+		c.queue_free()
+	for c in data["coins"]:
+		var attr = {"score":c["score"]}
+		coin_container.spawn(attr, str2var(c["position"]))
 
 func save_game(which_file):
 	var file = File.new()
@@ -67,7 +76,7 @@ func load_game(which_file):
 		var data = parse_json(file.get_as_text())
 		file.close()
 		if typeof(data) == TYPE_DICTIONARY:
-			pass
+			load_save_data(data)
 		else:
 			printerr("Corrupted data")
 	else:

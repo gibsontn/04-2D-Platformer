@@ -745,7 +745,7 @@ position = Vector2( 16, 80 )
 scale = Vector2( 3, 3 )
 frames = SubResource( 39 )
 animation = "Whoosh"
-frame = 10
+frame = 15
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Portal"]
@@ -782,6 +782,7 @@ __meta__ = {
 }
 
 [node name="Menu" type="Control" parent="UI"]
+pause_mode = 2
 visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
