@@ -21,6 +21,7 @@ None
 ## Extra Credit
 Game Background Music
 Animated sprite for the coins
+Shader on game scene background
 
 ## Created by 
 Taylor Gibson
